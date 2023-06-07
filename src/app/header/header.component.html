@@ -1,0 +1,38 @@
+
+
+
+<header class="navbar navbar-expand my-2 text-light  px-4 flex-column flex-md-row">
+  <button class="btn btn-lg btn-outline-light my-1 me-2" (click)="openStart(content)">Choose currencies</button>
+  <div class="row g-3">
+    <div class="d-flex flex-row-reverse ">
+      <div class="p-2 bd-highlight">USD: {{exchangeRateFromKey('USD')}}</div>
+      <div class="p-2 bd-highlight">EUR: {{exchangeRateFromKey('EUR')}}</div>
+    </div>
+  </div>
+</header>
+
+
+
+<ng-template #content let-offcanvas>
+
+<div class="offcanvas-header">
+  <h4 class="offcanvas-title">Choose Currencies</h4>
+  <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
+</div>
+<div class="offcanvas-body">
+
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let currency of exchangeRatesKeys">
+      <input type="checkbox" (click)="handleClick($event, currency)" [checked]="currencies.includes(currency)">
+      <label>{{ currency }}</label>
+    </li>
+  </ul>
+
+  <div class="text-end">
+    <button type="button" class="btn btn-outline-dark" (click)="offcanvas.close('Close click')">Close</button>
+  </div>
+</div>
+
+
+</ng-template>
+

@@ -1,0 +1,53 @@
+<div>
+  <div class="row g-3  ">
+    <div class="col-sm-8 col-md-8 col-lg-4">
+      <div class="input-group">
+        <div class="input-group-text">Base currency</div>
+        <input class="form-control" type="number" id="baseCurrency" [(ngModel)]="amount" (input)="convertCurrency(true)" placeholder="Base currency">
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-4 col-lg-1">
+      <div ngbDropdown>
+        <button class="btn btn-primary" id="dropdownBasic" ngbDropdownToggle>
+          {{ baseCurrency }}
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic">
+          <button class="dropdown-item" *ngFor="let currency of currencies" (click)="selectBaseCurrency(currency)">{{ currency }}</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-sm-12 col-md-12 col-lg-1 ">
+      <button class="btn btn-success mx-2" (click)="swapCurrencies()">Swap</button>
+    </div>
+
+
+    <div class="col-sm-8 col-md-8 col-lg-4">
+      <div class="input-group">
+
+        <div class="input-group-text">Target currency</div>
+        <input class="form-control" type="number" id="targetCurrency" [(ngModel)]="convertedAmount"
+          (input)="convertCurrency(false)" placeholder="Target currency" required>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-4 col-lg-1">
+      <div ngbDropdown>
+        <button class="btn btn-primary" id="dropdownBasic" ngbDropdownToggle>
+          {{ targetCurrency }}
+        </button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic">
+          <button class="dropdown-item" *ngFor="let currency of currencies" (click)="selectTargetCurrency(currency)">{{
+            currency }}</button>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+
+</div>

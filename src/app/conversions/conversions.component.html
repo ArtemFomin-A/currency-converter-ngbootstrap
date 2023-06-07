@@ -1,0 +1,19 @@
+
+
+
+
+
+<div class="border container-lg">
+
+<p *ngFor="let alert of alerts">
+	<ngb-alert class="m-3 border " [type]="alert.type" (closed)="close(alert)">
+        <app-conversion [currencies]="currencies" [exchangeRates]="exchangeRates"></app-conversion>    
+    </ngb-alert>
+</p>
+<p>
+	<button type="button" class="btn btn-primary m-3" (click)="reset()">Reset</button>
+    <button class="btn btn-primary" (click)="addConversionAllert()">Add Conversion</button>
+
+</p>
+
+</div>
