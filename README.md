@@ -19,7 +19,7 @@ This is a web application for currency exchange rates. It allows users to conver
 
 ## Getting Started
 
-Follow the steps below to get started with the Currency Exchange project:
+Follow the steps below to get started with the Currency Converter project:
 
 1. Clone the repository: `git clone <repository_url>`
 2. Install the dependencies: `npm install`
