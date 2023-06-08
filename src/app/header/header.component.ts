@@ -1,11 +1,10 @@
-import { Component, Input, TemplateRef, ViewEncapsulation, EventEmitter, Output, OnInit  } from '@angular/core';
+import { Component, Input, TemplateRef, EventEmitter, Output, OnInit  } from '@angular/core';
 import { NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
-  encapsulation: ViewEncapsulation.None,
 })
 export class HeaderComponent implements OnInit{
 
