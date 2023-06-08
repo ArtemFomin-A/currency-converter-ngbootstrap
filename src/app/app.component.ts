@@ -21,7 +21,11 @@ export class AppComponent implements OnInit {
   fetchExchangeRates() {
     const url = 'https://api.exchangerate-api.com/v4/latest/UAH';
     this.http.get(url).subscribe((response: any) => {
+      
       this.exchangeRates = response.rates;
+      response.header({
+        'Access-Control-Allow-Origin': '*',
+      });
     });
   }
 
