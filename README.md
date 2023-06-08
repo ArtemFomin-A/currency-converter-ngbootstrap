@@ -19,7 +19,9 @@ This is a web application for currency exchange rates. It allows users to conver
 
 ## Getting Started
 
-Follow the steps below to get started with the Currency Converter project:
+You can open this project deployed on github pages by the link: https://artemfomin-a.github.io/currency-converter-ngbootstrap/
+
+If you would like to run the project locally, follow the steps below to get started with the Currency Converter project:
 
 1. Clone the repository: `git clone <repository_url>`
 2. Install the dependencies: `npm install`
