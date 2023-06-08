@@ -1,27 +1,39 @@
-# CurrencyExchange
+# Currency converter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.3.
+This is a web application for currency exchange rates. It allows users to convert currencies based on the latest exchange rates.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Select base and target currencies to perform currency conversion.
+- Real-time exchange rates fetched from an external API.
+- Responsive design for optimal viewing on different devices.
+- Posibility to change the pool of dropdown menu's currencies.
+- Support for multiple conversions.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular: A popular JavaScript framework for building web applications.
+- Bootstrap: A front-end framework for creating responsive and modern web interfaces.
+- ng-bootstrap: Angular directives for Bootstrap components.
+- HttpClient: Angular's built-in module for making HTTP requests.
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Follow the steps below to get started with the Currency Exchange project:
 
-## Running unit tests
+1. Clone the repository: `git clone <repository_url>`
+2. Install the dependencies: `npm install`
+3. Start the development server: `ng serve`
+4. Open the web application in your browser: `http://localhost:4200`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+- Select the base currency and target currency from the dropdown menus.
+- Enter the amount in the base currency that you want to convert.
+- The converted amount will be displayed instantly.
+- You can also change the pool of dropdown menu's currencies to perform a new conversion.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contributing
 
-## Further help
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
